@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html>
+<head>
+</head>
+
+<body>
+
+<a name="А1">Анкор 1 </a> <br/>
+<a name="А2">Анкор 2 </a> <br/>
+
+<form name="Форма 1"></form>
+
+<img border="0" name="phoenix" id= "phoenix" src="phoenix.jpeg" alt="phoenix" width="300" height="240"/>
+<img border="0" id= "dog"src="dog.jpeg" width="320" height="200" />
+<img border="0" id= "HP" src="HP.jpeg" width="235" height="288" /><br/>
+<input type="button" onclick="alignImg()" value="Выравнить изображение" /><br/><br/>
+
+<a id= "google" href="https://www.google.com">google </a> <br/>
+<a id= "ya" href="https://www.yandex.com">yandex </a> <br/>
+
+<script src ="text.js"></script>
+
+<form id="forma5" name="Форма 5">
+	Кнопка:<br/>
+	15.	<input id = "knopka" name="knopka" type="button"  value="cnopca"/>
+</form>
+
+<script src ="button.js"></script><br/><br/>
+
+Форма:
+<form id= "forma2" name="Форма 2">
+		Имя: <input type="text" name="Name" value="VOT" /><br />
+		Фамилия: <input type="text" name="Surname" value="ZNACHENIE" /><br />
+</form>
+
+<form id="forma3" name="Форма 3" action="form_action.php" enctype="text/plain"  method="get">
+	Любимое время суток: <input type="text" name="time"  /><br />
+  Любимая картинка: <input type="text" name="kartinka" /><br />
+  <input type="button" onclick="formReset()" value="Сбросить форму" />
+</form>
+
+<form id= "forma4" name="Форма 4">
+		Имя: <input type="text" name="Name" placeholder="name"/><br />
+		Фамилия: <input type="text" name="Surname" placeholder="surname"/><br />
+		<input type="button" onclick="formSubmit()" value="Отправить форму" />
+</form>
+
+<script src ="form.js"></script><br/><br/>
+
+Изображение:<br/><br/>
+<script src ="image.js"></script>
+
+<input type="button" onclick="addBorder()" value="Добавить границу" /><br/>
+<input type="button" onclick="changeSize()" value="Изменить размер изображения" /><br/>
+<script type="text/javascript">
+	document.write("Название изображения: ");
+	document.write(document.getElementById('phoenix').name);
+	document.write("<br/>" + "29. Альтернативный текст для изображения: "+document.getElementById("phoenix").alt);
+</script><br/>
+<input type="button" onclick="changeSrc()" value="Изменить изображение" /><br/><br/>
+
+
+События:<br/><br/>
+<script src ="event.js"></script>
+
+<input type="button" onmousedown="whichButton1(event)" value="Кнопка мыши" /><br/>
+<input type="button" onkeyup="whichButton2(event)" value="Код клавиатуры" /><br/>
+<input type="button" onmousedown="show_coords(event)" value="Координаты курсора" /><br/>
+<input type="button" onmousedown="coordinates(event)" value="Координаты курсора отн экрана" /><br/>
+<input type="button" onmousedown="whichElement(event)" value="Определения нажатия" /><br/>
+<input type="button" onmousedown="getEventType(event)" value="Тип события" /><br/><br/>
+
+Таблицы:<br/>
+
+<table border="1" id="Таблица" width="80%" height="70%">
+	<tr id="tr1">
+		<td>WEB</td>
+		<td>PROGRAMMING</td>
+		<td><input type="button" value="Удалить" onclick="deleteRow(this)"></td>
+	</tr>
+	<tr id="tr2">
+		<td>ITMO</td>
+		<td>UNIVERSITY</td>
+		<td><input type="button" value="Удалить" onclick="deleteRow(this)"></td>
+	</tr>
+</table>
+<br/>
+<script src="table.js"></script>
+
+<input type="button" onclick="changeBorder()" value="Изменить Границу"><br/>
+<input type="button" onclick="padding()" value="Изменить Cellpadding">
+<input type="button" onclick="spacing()" value="Изменить Cellspacing"><br/>
+<input type="button" onclick="aboveFrames()" value="Показать рамку сверху">
+<input type="button" onclick="belowFrames()" value="Показать рамку снизу"><br />
+<input type="button" onclick="createCaption()" value="Создать заголовок"><br />
+<input type="button" onclick="insRow()" value="Вставить строку">
+<input type="button" onclick="insCell()" value="Вставить ячейку"><br />
+<input type="button" onclick="rightAlign()" value="Выравнить строку по правому краю" /><br />
+<input type="button" onclick="centerAlign()" value="Выравнить строку по середине" /><br />
+<input type="button" onclick="botAlign()" value="Выравнить строку таблицы по низу" /><br />
+<input type="button" onclick="valignCell()" value="Вертикальное выранивание содержимого ячейки"><br />
+<input type="button" onclick="changeContent()" value="Изменить содержимое">
+<input type="button" onclick="setColSpan()" value="Изменить colspan">
+
+</body>
+
+</html>
